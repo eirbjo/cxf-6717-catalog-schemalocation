@@ -1,0 +1,6 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <uri name="urn:xsd/hello.xsd" uri="classpath:xsd/hello.xsd"/>
+    <uri name="urn:xsd/hello-types.xsd" uri="classpath:xsd/hello-types.xsd"/>
+</catalog>
+
+

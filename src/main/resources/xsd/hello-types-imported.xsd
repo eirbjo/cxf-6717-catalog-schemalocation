@@ -1,0 +1,19 @@
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://hello.respiro.kantega.org/ws/hello-1.0"
+           elementFormDefault="qualified" targetNamespace="http://hello.respiro.kantega.org/ws/hello-types-1.0"
+           version="1.0">
+
+
+    <xs:complexType name="greet">
+        <xs:sequence>
+            <xs:element minOccurs="1"  nillable="false" name="receiver" type="xs:string"/>
+            <xs:element minOccurs="0"  name="lang" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="greetResponse">
+        <xs:sequence>
+            <xs:element minOccurs="1" name="messageResult" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

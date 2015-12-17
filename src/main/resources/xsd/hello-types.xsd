@@ -1,0 +1,8 @@
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://hello.respiro.kantega.org/ws/hello-1.0"
+           elementFormDefault="qualified" targetNamespace="http://hello.respiro.kantega.org/ws/hello-types-1.0"
+           version="1.0">
+
+
+    <xsd:import namespace="http://hello.respiro.kantega.org/ws/hello-types-1.0" schemaLocation="../xsd/hello-types-imported.xsd"/>
+
+</xs:schema>

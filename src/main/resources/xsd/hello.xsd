@@ -1,0 +1,19 @@
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://hello.respiro.kantega.org/ws/hello-1.0"
+           elementFormDefault="qualified" targetNamespace="http://hello.respiro.kantega.org/ws/hello-1.0"
+           xmlns:types="http://hello.respiro.kantega.org/ws/hello-types-1.0"
+           version="1.0">
+
+    <xs:import namespace="http://hello.respiro.kantega.org/ws/hello-types-1.0" schemaLocation="urn:xsd/hello-types.xsd"/>
+
+    <xs:element name="greet" type="types:greet"/>
+
+    <xs:element name="greetResponse" type="types:greetResponse"/>
+
+    <xs:element name="faultElement">
+        <xs:complexType>
+            <xsd:sequence>
+                <xs:element name="message" type="xs:string"/>
+            </xsd:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
